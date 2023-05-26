@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_haritask/homepage.dart';
 import 'package:ui_haritask/second_ui.dart';
 import 'package:ui_haritask/show.dart';
+import 'package:ui_haritask/third_ui.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: HomePage(),
       //  home: MyShowApp(),
+      //home: ThirdUiPage(),
       home: SecondUiPage(),
       debugShowCheckedModeBanner: false,
     );
