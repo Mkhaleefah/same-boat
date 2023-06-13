@@ -26,7 +26,6 @@ class _SecondUiPageState extends State<SecondUiPage> {
               ))
         ],
         title: Row(
-          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 20),
@@ -278,9 +277,6 @@ class _SecondUiPageState extends State<SecondUiPage> {
                       children: [
                         Container(
                           height: 340,
-                          //width: 600,
-                          // height: size.height * .20,
-                          // width: size.width * .95,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.only(
                                   topLeft: Radius.circular(30),
@@ -402,47 +398,6 @@ class _SecondUiPageState extends State<SecondUiPage> {
                                     color: Colors.white,
                                   ),
                                 )
-                                // Container(
-                                //   child: TextField(
-                                //     decoration: InputDecoration(
-                                //         hintText: 'Type Message....',
-                                //         filled: true,
-                                //         fillColor: Colors.black54,
-                                //         hintStyle: TextStyle(
-                                //             color: Colors.white,
-                                //             fontWeight: FontWeight.bold,
-                                //             fontSize: 15),
-                                //         prefixIcon: Icon(
-                                //           Icons.add_circle,
-                                //           color: Colors.white,
-                                //         ),
-                                //         suffixIcon: Icon(Icons.send),
-                                //         enabledBorder: OutlineInputBorder(
-                                //           borderSide: BorderSide.none,
-                                //           borderRadius:
-                                //               BorderRadius.circular(30),
-                                //         )),
-                                //   ),
-                                //   height: 50,
-                                //   width: 220,
-                                //   decoration: BoxDecoration(
-                                //       borderRadius: BorderRadius.circular(50),
-                                //       color: Color(0xff1F1932)),
-                                // ),
-                                // SizedBox(
-                                //   width: 30,
-                                // ),
-                                // Container(
-                                //   height: 50,
-                                //   width: 40,
-                                //   decoration: BoxDecoration(
-                                //       borderRadius: BorderRadius.circular(20),
-                                //       color: Color(0xff1F1932)),
-                                //   child: Icon(
-                                //     Icons.mic,
-                                //     color: Colors.white,
-                                //   ),
-                                // ),
                               ],
                             ),
                           ),
@@ -459,40 +414,29 @@ class _SecondUiPageState extends State<SecondUiPage> {
       bottomNavigationBar: NavigationBar(
         height: 60,
         backgroundColor: Color(0xff1F1932),
-        destinations: const [
+        destinations: [
           NavigationDestination(
-            icon: Icon(
-              Icons.home,
-              color: Colors.white,
-            ),
+            icon: Image.asset('images/icon_home.png'),
             label: '',
           ),
           NavigationDestination(
-            icon: Icon(
-              Icons.search,
-              color: Colors.white,
-            ),
+            icon: Image.asset('images/icon_search.png'),
             label: '',
           ),
           NavigationDestination(
-            icon: Icon(
-              Icons.add_card,
-              color: Colors.white,
-            ),
+            icon: Image.asset('images/icon_add.png'),
             label: '',
           ),
           NavigationDestination(
-            icon: Icon(
-              Icons.notifications,
-              color: Colors.white,
-            ),
+            icon: Image.asset('images/icon_notification.png'),
+            // icon: Icon(
+            //   Icons.notifications,
+            //   color: Colors.white,
+            // ),
             label: '',
           ),
           NavigationDestination(
-            icon: Icon(
-              Icons.person_2,
-              color: Colors.white,
-            ),
+            icon: Image.asset('images/icon_profile.png'),
             label: '',
           ),
         ],
