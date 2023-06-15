@@ -38,6 +38,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:ui_haritask/flight_container/robetic.dart';
 import 'package:ui_haritask/sameboat/sameboat_ui.dart';
 import 'package:ui_haritask/todo/viewtask.dart';
 import 'package:get_storage/get_storage.dart';
@@ -58,7 +59,8 @@ class MyApp extends StatelessWidget {
               const AppBarTheme(iconTheme: IconThemeData(color: Colors.black))),
       debugShowCheckedModeBanner: false,
       // home: ViewTask(),
-      home: SameBoat(),
+      //  home: SameBoat(),
+      home: RobeticUi(),
     );
   }
 }
